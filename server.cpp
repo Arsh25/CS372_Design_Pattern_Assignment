@@ -14,3 +14,8 @@ void server::addClient()
 		clientMessages_.push_back("");
 	}
 }
+
+vector <string> server::getClients()
+{
+	return vector<string>{"Dummy"};
+}

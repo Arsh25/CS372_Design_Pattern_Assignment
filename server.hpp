@@ -4,6 +4,7 @@
 #include "interface.hpp"
 
 
+
 class server:public interface
 {
 
@@ -12,9 +13,10 @@ private:
 	std::vector<std::string> clientMessages_;
 
 public:
-	server( unsigned int serverPort = 8080): interface((SOCKET)serverPort)
+	server( unsigned int serverPort): interface((SOCKET)serverPort)
 	{}
-	server() = delete;
+	server(): server (8080)
+	{}
 
 	void create();
 	void addClient();
