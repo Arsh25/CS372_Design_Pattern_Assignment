@@ -23,8 +23,6 @@ public:
 
 
 
-virtual ~interface() = 0;
-
 };
 
 #endif
