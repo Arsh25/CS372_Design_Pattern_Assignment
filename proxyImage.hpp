@@ -7,8 +7,8 @@
 	Header for Proxyimage class.
 	Create a proxy image.
 	Does not perform any hypothtical disk access 
-	unless display is called. Saves unnecessary disk
-	operations. 
+	unless display is called. 
+	Saves unnecessary disk operations. 
 */
 
 #ifndef PROXYIMAGE_HPP
