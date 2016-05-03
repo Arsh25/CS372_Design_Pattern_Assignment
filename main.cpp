@@ -28,6 +28,18 @@ int main()
 	Proxyimage proxyTest02 ("proxyTest02.jpg");
 	Proxyimage proxyTest03 ("proxyTest03.jpg");
 
+	cout << endl << "LIST ALL FILES" <<endl;
+	/* 
+		Will not display test01 since it is a Realimage
+		and Realimages should never be directly constructed
+	*/
+
+	vector<string> files = proxyTest01.getFiles();
+	for (auto file: files)
+	{
+		cout << file <<endl;
+	}
+
 	cout <<endl; // Make output clearer
 
 	cout << "DISPLAYING PROXY IMAGES" <<endl;
