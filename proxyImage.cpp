@@ -8,6 +8,8 @@
 
 #include "proxyImage.hpp"
 
+vector<string> Proxyimage::files_;
+
 /*
 	2 parameter constructor
 	Pre: None
@@ -15,7 +17,8 @@
 */
 Proxyimage::Proxyimage(string fileName): fileName_(fileName)
 {
-	cout << "Proxy image created for file " << fileName << endl;
+	cout << "Proxy image created for file " << fileName_ << endl;
+	files_.push_back(fileName_);
 }
 
 /*
@@ -29,4 +32,9 @@ void Proxyimage::display()
 {
 	realImage_ = Realimage(fileName_);
 	realImage_.display();
+}
+
+vector<string> Proxyimage::getFiles()
+{
+	return files_;
 }
