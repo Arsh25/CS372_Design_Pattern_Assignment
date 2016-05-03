@@ -16,4 +16,5 @@ Proxyimage::Proxyimage(string fileName): fileName_(fileName)
 void Proxyimage::display()
 {
 	realImage_ = Realimage(fileName_);
+	realImage_.display();
 }
