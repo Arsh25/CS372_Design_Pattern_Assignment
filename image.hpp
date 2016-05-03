@@ -5,6 +5,8 @@
 
 	CS372 Assignment 4
 	Interface for proxy pattern design pattern.
+
+	No associated source file.
 */
 
 #ifndef IMAGE_HPP
