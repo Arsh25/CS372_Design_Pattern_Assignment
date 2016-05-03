@@ -15,15 +15,19 @@
 #define PROXYIMAGE_HPP
 
 #include "realImage.hpp"
+#include <vector>
+using std::vector;
 
 class Proxyimage:public Image
 {
 	string fileName_;
 	Realimage realImage_;
+	static vector<string> files_;
 
 public:
 	Proxyimage(string fileName);
 	void display() override;
+	vector<string> getFiles();
 
 
 
